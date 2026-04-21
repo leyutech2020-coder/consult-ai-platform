@@ -16,6 +16,7 @@
 		}
 		html{scroll-behavior:smooth}
 		body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+		
 
 		/* ── Nav ── */
 		nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.05)}
@@ -28,7 +29,7 @@
 
 		/* ── Hero ── */
 		#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;position:relative;overflow:hidden}
-		#hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%, rgba(79,140,255,0.15) 0%, transparent 60%),radial-gradient(ellipse at 80% 80%, rgba(168,85,247,0.1) 0%, transparent 50%)}
+		#hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%, color-mix(in srgb, #4f8cff 15%, transparent) 0%, transparent 60%),radial-gradient(ellipse at 80% 80%, color-mix(in srgb, #7c3aed 10%, transparent) 0%, transparent 50%)}
 		.hero-badge{display:inline-block;padding:6px 16px;border-radius:9999px;background:rgba(79,140,255,0.1);border:1px solid rgba(79,140,255,0.3);color:var(--primary);font-size:13px;font-weight:600;margin-bottom:24px;animation:fadeUp .6s ease both}
 		.hero-title{font-size:clamp(40px,7vw,80px);font-weight:800;line-height:1.1;margin-bottom:20px;animation:fadeUp .6s .1s ease both}
 		.hero-title span{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -92,7 +93,6 @@
 	</style>
 </head>
 <body>
-
 <!-- Navigation -->
 <nav>
 	<div class="nav-logo">Consult AI Platform</div>
@@ -200,5 +200,12 @@
 </footer>
 
 
+	<!-- AI Agent Widget -->
+	<script src="https://agent.leyutechs.com/embed/widget.js"
+		data-key="ek_d6cc613fa50ba1a3352eac092dbd73350bba84831c74803b"
+		data-theme="#4f8cff"
+		data-position="right"
+		data-welcome="您好！我是 Consult AI Platform 的 AI 助理，有什麼可以幫您的嗎？">
+	</script>
 </body>
 </html>
